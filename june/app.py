@@ -25,6 +25,8 @@ def create_app(config=None):
         app.config.update(config)
     elif config:
         app.config.from_pyfile(os.path.abspath(config))
+    
+    print app.config, "at create_app"
 
     app.static_folder = app.config.get('STATIC_FOLDER')
     app.config.update({'SITE_TIME': datetime.datetime.utcnow()})
@@ -122,8 +124,8 @@ def register_babel(app):
     from flask_babel import Babel
 
     babel = Babel(app)
-    supported = app.config.get('BABEL_SUPPORTED_LOCALES', ['en', 'zh'])
-    default = app.config.get('BABEL_DEFAULT_LOCALE', 'en')
+    supported = app.config.get('BABEL_SUPPORTED_LOCALES', ['zh', 'en'])
+    default = app.config.get('BABEL_DEFAULT_LOCALE', 'zh')
 
     @babel.localeselector
     def get_locale():

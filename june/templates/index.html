@@ -4,6 +4,16 @@
 {% from "snippet/macro.html" import topic_columns %}
 
 {% block content %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{ _('Recent Nodes') }}</h3>
+    </div>
+    <div class="panel-body">
+      {% for node in nodes %}
+        <a class="label label-node" href="{{ url_for('node.view', urlname=node.urlname) }}">{{ node }}</a>
+      {% endfor %}
+    </div>
+  </div>
   {% if blogs %}
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -18,18 +28,5 @@
       <h3 class="panel-title">{{ _('Recent Topics') }}</h3>
     </div>
     {{ topic_columns(topics) }}
-  </div>
-{% endblock %}
-
-{% block sidebar %}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">{{ _('Recent Nodes') }}</h3>
-    </div>
-    <div class="panel-body">
-      {% for node in nodes %}
-        <a class="label label-node" href="{{ url_for('node.view', urlname=node.urlname) }}">{{ node }}</a>
-      {% endfor %}
-    </div>
   </div>
 {% endblock %}

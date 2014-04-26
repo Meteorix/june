@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{% block subtitle %}{% endblock %} — {{ config.SITE_TITLE }}{% endblock %}</title>
   {% include "snippet/google-analytics.html" %}
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29729598-1']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+      _gaq.push(['_setCustomVar', 1, 'UserType', 'Member', 2]);
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = 'https://ssl.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+  </script>
   <link rel="stylesheet" href="{{ static_url('app.css') }}">
   <script src="{{ static_url('app.js') }}"></script>
   {% block afterstyle %}{% endblock %}

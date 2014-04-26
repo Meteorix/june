@@ -21,7 +21,8 @@ class Account(db.Model, SessionMixin):
     website = db.Column(db.String(400))
 
     role = db.Column(db.String(10), default='new')
-    active = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+    #active = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+    active = db.Column(db.DateTime, index=True)
 
     created = db.Column(db.DateTime, default=datetime.utcnow)
     token = db.Column(db.String(20))

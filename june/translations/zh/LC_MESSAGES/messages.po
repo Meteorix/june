@@ -153,7 +153,7 @@ msgstr "标题"
 
 #: june/forms/node.py:14
 msgid "The screen title of the node"
-msgstr "节点的标题"
+msgstr "版块的标题"
 
 #: june/forms/node.py:17
 msgid "URL"
@@ -161,7 +161,7 @@ msgstr "链接"
 
 #: june/forms/node.py:18
 msgid "The url name of the node"
-msgstr "节点的链接名"
+msgstr "版块的链接名"
 
 #: june/forms/node.py:22 june/views/admin.py:31
 msgid "Role"
@@ -185,7 +185,7 @@ msgstr "超级管理员"
 
 #: june/forms/node.py:36
 msgid "The node exists"
-msgstr "节点已存在"
+msgstr "版块已存在"
 
 #: june/forms/topic.py:13
 msgid "Title of the topic"
@@ -215,7 +215,7 @@ msgstr "最近的帖子"
 
 #: june/templates/index.html:30
 msgid "Recent Nodes"
-msgstr "最近的节点"
+msgstr "最近的版块"
 
 #: june/templates/account/find.html:4 june/templates/account/find.html:8
 #: june/templates/email/find.html:11
@@ -329,7 +329,7 @@ msgstr "话题"
 #: june/templates/macro/ui.html:15 june/templates/node/nodes.html:3
 #: june/templates/node/nodes.html:15
 msgid "Nodes"
-msgstr "节点"
+msgstr "版块"
 
 #: june/templates/macro/ui.html:16 june/templates/user/users.html:3
 msgid "Users"
@@ -350,7 +350,7 @@ msgstr "新建话题"
 #: june/templates/node/create.html:4 june/templates/node/create.html:9
 #: june/templates/snippet/nav-dropmenu.html:16
 msgid "Create Node"
-msgstr "新建节点"
+msgstr "新建版块"
 
 #: june/templates/node/create.html:19 june/templates/topic/create.html:26
 msgid "Create"
@@ -358,7 +358,7 @@ msgstr "新建"
 
 #: june/templates/node/edit.html:4 june/templates/node/edit.html:9
 msgid "Edit Node"
-msgstr "编辑节点"
+msgstr "编辑版块"
 
 #: june/templates/node/view.html:37
 msgid "Create a topic"
@@ -366,7 +366,7 @@ msgstr "新建话题"
 
 #: june/templates/node/view.html:39
 msgid "Edit this node"
-msgstr "编辑节点"
+msgstr "编辑版块"
 
 #: june/templates/node/view.html:54
 msgid "Reputation"
@@ -451,7 +451,7 @@ msgstr "登录后方可使用。"
 
 #: june/templates/topic/view.html:97
 msgid "Topics in this node"
-msgstr "该节点下的话题"
+msgstr "该版块下的话题"
 
 #: june/templates/user/users.html:14
 msgid "Active Members"
@@ -504,7 +504,7 @@ msgstr "休息一下，再等 %(time)i 秒。"
 
 #: june/views/topic.py:94 june/views/topic.py:98
 msgid "You have no permission in this node."
-msgstr "你没有该节点的权限。"
+msgstr "你没有该版块的权限。"
 
 #: june/views/topic.py:171
 msgid "Password is required to delete a topic"
@@ -520,7 +520,7 @@ msgstr "成功转移话题。"
 
 #: june/views/topic.py:204
 msgid "Node not found."
-msgstr "节点没找到。"
+msgstr "版块没找到。"
 
 #: june/views/topic.py:242
 msgid "Missing content"

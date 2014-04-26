@@ -73,7 +73,8 @@ def create(urlname):
     now = datetime.datetime.utcnow()
     delta = now - g.user.created
     verify = current_app.config.get('VERIFY_USER')
-    if verify and not delta.days and not g.user.is_admin:
+    newuser_span = current_app.config.get('NEWUSER_SPAN')
+    if verify and delta.days < newuser_span and not g.user.is_admin:
         # only allow user who has been registered after a day
         flash(_('New users can not create a topic'), 'warn')
         return redirect(url_for('.topics'))

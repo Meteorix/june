@@ -74,7 +74,7 @@
               <div class="action clearfix">
                 {% if g.user and (g.user.is_staff or g.user.id == item.account_id) %}
                   <a class="delete" href="#{{ item.id }}" title="{{ _('Delete') }}">
-                    <i class="glyphicon glyphicon-trash"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
                   </a>
                 {% endif %}
                 <a class="reply" href="#{{ item.user.username }}">{{ _('Reply') }}</a>

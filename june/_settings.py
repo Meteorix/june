@@ -1,8 +1,9 @@
+#encoding=utf-8
 import os
 
 DEBUG = False
 TESTING = False
-VERIFY_EMAIL = True
+VERIFY_EMAIL = False
 VERIFY_USER = True
 
 ROOT_FOLDER = os.path.dirname(os.path.abspath(__file__))
@@ -12,7 +13,7 @@ else:
     STATIC_FOLDER = os.path.join(ROOT_FOLDER, 'public', 'static')
 
 #: site
-SITE_TITLE = 'Python China'
+SITE_TITLE = 'liuzaiusa'
 SITE_URL = '/'
 # SITE_URL = 'http://python-china.org/'
 
@@ -52,8 +53,12 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///%s' % os.path.join(
 
 #: cache settings
 # find options on http://pythonhosted.org/Flask-Cache/
-# CACHE_TYPE = 'simple'
+CACHE_TYPE = 'simple'
 
 #: i18n settings
-# BABEL_DEFAULT_LOCALE = 'zh'
-# BABEL_SUPPORTED_LOCALES = ['zh']
+BABEL_DEFAULT_LOCALE = 'zh'
+BABEL_SUPPORTED_LOCALES = ['zh']
+
+#new user span days, cannot open topic
+NEWUSER_SPAN = 0
+
